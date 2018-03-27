@@ -11,13 +11,18 @@
     "start": "start-storybook -p 9001 -c .storybook"
   },
   "jest": {
-		"verbose": true,
-		"testRegex": ".*\\.test\\.(js|jsx)$",
-		"transform": {
-			".js": "./node_modules/babel-jest"
-		},
-		"setupTestFrameworkScriptFile": "./__tests__/setup.js"
-	},
+    "verbose": true,
+    "testRegex": ".*\\.test\\.(js|jsx)$",
+    "transform": {
+      ".js": "./node_modules/babel-jest"
+    },
+    "setupTestFrameworkScriptFile": "./__tests__/setup.js"
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "trailingComma": "es5",
+    "singleQuote": true
+  },
   "dependencies": {
     "material-ui": "^0.20.0",
     "react": "^16.2.0",
@@ -26,6 +31,7 @@
     "redux": "^3.7.2"
   },
   "devDependencies": {
+    "@storybook/react": "^3.3.15",
     "@types/enzyme": "^3.1.9",
     "@types/jest": "^22.2.2",
     "@types/material-ui": "^0.21.1",
@@ -35,14 +41,12 @@
     "@types/redux": "^3.6.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.3",
-    "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.4.3",
-    "jest-enzyme": "^6.0.0",
-    "webpack": "^4.3.0"
+    "jest-enzyme": "^6.0.0"
   }
 }
