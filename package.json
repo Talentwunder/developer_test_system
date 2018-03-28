@@ -1,52 +1,57 @@
 {
-  "name": "talentwunder-dev-test",
-  "version": "1.0.0",
-  "description": "This package should be used to test the capabilities of a frontend developer",
-  "main": "index.js",
-  "repository": "https://github.com/Talentwunder/developer_test_system",
-  "author": "Timo Hanisch",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "start": "start-storybook -p 9001 -c .storybook"
-  },
-  "jest": {
-    "verbose": true,
-    "testRegex": ".*\\.test\\.(js|jsx)$",
-    "transform": {
-      ".js": "./node_modules/babel-jest"
+    "name": "talentwunder-dev-test",
+    "version": "1.0.0",
+    "description": "This package should be used to test the capabilities of a frontend developer",
+    "main": "index.js",
+    "repository": "https://github.com/Talentwunder/developer_test_system",
+    "author": "Timo Hanisch",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "start": "start-storybook -p 9001 -c .storybook"
     },
-    "setupTestFrameworkScriptFile": "./__tests__/setup.js"
-  },
-  "prettier": {
-    "tabWidth": 4,
-    "trailingComma": "es5",
-    "singleQuote": true
-  },
-  "dependencies": {
-    "material-ui": "^0.20.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-redux": "^5.0.7",
-    "redux": "^3.7.2"
-  },
-  "devDependencies": {
-    "@storybook/react": "^3.3.15",
-    "@types/enzyme": "^3.1.9",
-    "@types/jest": "^22.2.2",
-    "@types/material-ui": "^0.21.1",
-    "@types/react": "^16.0.41",
-    "@types/react-dom": "^16.0.4",
-    "@types/react-redux": "^5.0.15",
-    "@types/redux": "^3.6.0",
-    "babel-core": "^6.26.0",
-    "babel-jest": "^22.4.3",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "jest": "^22.4.3",
-    "jest-enzyme": "^6.0.0"
-  }
+    "jest": {
+        "verbose": true,
+        "testRegex": ".*\\.test\\.(js|jsx)$",
+        "transform": {
+            ".js": "./node_modules/babel-jest"
+        },
+        "setupTestFrameworkScriptFile": "./__tests__/setup.js"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 120
+    },
+    "dependencies": {
+        "material-ui": "^0.20.0",
+        "prop-types": "^15.6.1",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-redux": "^5.0.7",
+        "redux": "^3.7.2",
+        "redux-thunk": "^2.2.0",
+        "whatwg-fetch": "^2.0.3"
+    },
+    "devDependencies": {
+        "@storybook/react": "^3.3.15",
+        "@types/enzyme": "^3.1.9",
+        "@types/jest": "^22.2.2",
+        "@types/material-ui": "^0.21.1",
+        "@types/prop-types": "^15.5.2",
+        "@types/react": "^16.0.41",
+        "@types/react-dom": "^16.0.4",
+        "@types/react-redux": "^5.0.15",
+        "@types/redux": "^3.6.0",
+        "babel-core": "^6.26.0",
+        "babel-jest": "^22.4.3",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-1": "^6.24.1",
+        "enzyme": "^3.3.0",
+        "enzyme-adapter-react-16": "^1.1.1",
+        "jest": "^22.4.3",
+        "jest-enzyme": "^6.0.0"
+    }
 }
