@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// TODO: Implement
+// TODO: Implement a visual representation of a HackerNews entry.
 const HackerNewsEntry = () => <div />;
 
 HackerNewsEntry.propTypes = {};

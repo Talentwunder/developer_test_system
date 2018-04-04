@@ -4,7 +4,13 @@ import { Paper, RaisedButton, CircularProgress } from 'material-ui';
 import { connect } from 'react-redux';
 import { fetchTopstoriesIds } from '../actions/hackerNews';
 
+/**
+ * The container class for rendering multiple HackerNews stories.
+ * 
+ * @author Timo Hanisch
+ */
 class HackerNewsList extends Component {
+    /* Inline style for the container component */
     static STYLES = {
         container: {
             padding: 16,
@@ -73,6 +79,7 @@ HackerNewsList.propTypes = {
     topstoriesLoading: PropTypes.bool.isRequired,
 };
 
+// Initializes Redux for the container component. 
 const mapStateToProps = ({ topstories, topstoriesError, topstoriesLoading }) => {
     return {
         topstories,
